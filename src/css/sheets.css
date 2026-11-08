@@ -1,7 +1,59 @@
-.coffee-icon {
- height: auto;
- width: auto;
- max-width: 250px;
- max-height: 250px;
+/* Μηδενισμός περιθωρίων για καθαρή εμφάνιση */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
+.shop-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: hsl(0, 0%, 4%); 
+}
+
+/* Header / Navbar Container */
+.navbar {
+  display: flex;                /* Ενεργοποίηση Flexbox */
+  justify-content: space-between; /* Σπρώχνει το λογότυπο αριστερά και το μενού δεξιά */
+  align-items: center;        /* Ευθυγράμμιση στον κατακόρυφο άξονα */
+  padding: 15px 30px;         /* Εσωτερικό περιθώριο */
+  background-color: lab(49.05% 13.31 32.24 / 0.499);  /* Καφέ φόντο (άλλαξέ το όπως θέλεις) */
+}
+
+/* Μέγεθος Εικόνας / Λογότυπου */
+.coffee-icon {
+  width: 60px;                /* Συνήθως για navbar προτιμάται μικρότερο μέγεθος (π.χ. 50-80px) */
+  height: auto;
+  border-radius: 50%;         /* Προαιρετικό: κάνει την εικόνα στρογγυλή */
+  display: block;
+}
+
+/* Λίστα Μενού (ul) */
+.nav-links {
+  list-style: none;           /* Αφαίρεση των κουκκίδων (bullets) */
+  display: flex;                /* Οριζόντια διάταξη των <li> */
+  gap: 325px;                  /* Απόσταση μεταξύ των συνδέσμων */
+}
+
+/* Σύνδεσμοι (a) */
+.nav-links a {
+  color: hsla(0, 0%, 100%, 0.11);             /* Λευκό χρώμα κειμένου */
+  text-decoration: none;      /* Αφαίρεση υπογράμμισης */
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Εφέ όταν περνάει το ποντίκι πάνω από τους συνδέσμους */
+.nav-links a:hover {
+  color: #d4a373;             /* Χρώμα αλλαγής στο hover (καφέ/μπεζ) */
+}
+
+/* Περιεχόμενο σελίδας */
+main {
+  padding: 20px;
+}
