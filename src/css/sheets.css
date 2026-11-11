@@ -32,6 +32,14 @@ body {
   display: block;
 }
 
+.coffee-shop-interior {
+  width: 100%;                /* Πλήρες πλάτος */
+  max-width: 800px;           /* Μέγιστο πλάτος για καλύτερη εμφάνιση */
+  height: auto;               /* Διατηρεί τις αναλογίες */
+  margin-top: 20px;           /* Απόσταση από το πάνω μέρος */
+  border-radius: 10px;        /* Στρογγυλεμένες γωνίες */
+}
+
 /* Λίστα Μενού (ul) */
 .nav-links {
   list-style: none;           /* Αφαίρεση των κουκκίδων (bullets) */
