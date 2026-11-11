@@ -34,7 +34,7 @@ body {
 
 .coffee-shop-interior {
   width: 100%;                /* Πλήρες πλάτος */
-  max-width: 800px;           /* Μέγιστο πλάτος για καλύτερη εμφάνιση */
+  max-width: 600px;           /* Μέγιστο πλάτος για καλύτερη εμφάνιση */
   height: auto;               /* Διατηρεί τις αναλογίες */
   margin-top: 20px;           /* Απόσταση από το πάνω μέρος */
   border-radius: 10px;        /* Στρογγυλεμένες γωνίες */
@@ -65,3 +65,10 @@ body {
 main {
   padding: 20px;
 }
+
+.about-table, tr, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  width: 50%;
+}
+  
